@@ -18,15 +18,15 @@ export default class Main extends Component {
 
     loadContries = async () => {
         const response = await api.get('/')
-        
 
+        
         this.setState({ 
-            pais: response.data[30].country,
-            casos: response.data[30].cases,
-            casosHoje: response.data[30].todayCases,
-            casosCriticos: response.data[30].critical,
-            mortes: response.data[30].deaths,
-            pessoasRecuperadas: response.data[30].recovered
+            pais: response.data[31].country,
+            casos: response.data[31].cases,
+            casosHoje: response.data[31].todayCases,
+            casosCriticos: response.data[31].critical,
+            mortes: response.data[31].deaths,
+            pessoasRecuperadas: response.data[31].recovered
          });
 
         //console.log(response.data)
