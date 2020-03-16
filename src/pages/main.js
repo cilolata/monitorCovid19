@@ -35,20 +35,19 @@ export default class Main extends Component {
     render(){
         const {pais, casos, casosHoje, casosCriticos, mortes, pessoasRecuperadas} = this.state;
         return (
-            <div className= 'info-cases'>
-                <h1>{pais}</h1>
-                <p>Casos</p>
-                <p><strong className="casos">{casos}</strong></p>
-                <p>Casos Hoje</p>
-                <p><strong className="casosHoje">{casosHoje}</strong></p>
-                <p>Casos Críticos</p>
-                <p><strong className="casosCriticos">{casosCriticos}</strong></p>
-                <p>Mortes</p>
-                <p><strong className="mortes">{mortes}</strong></p>
-                <p>Pessoas Recuperadas</p>
-                <p><strong className="pessoasRecuperadas">{pessoasRecuperadas}</strong></p>
-
-            </div>
+                <div className= 'info-cases'>
+                    <h1>{pais}</h1>
+                    <p>Casos</p>
+                    <p><strong className="casos">{casos}</strong></p>
+                    <p>Casos Hoje</p>
+                    <p><strong className="casosHoje">{casosHoje}</strong></p>
+                    <p>Casos Críticos</p>
+                    <p><strong className="casosCriticos">{casosCriticos}</strong></p>
+                    <p>Mortes</p>
+                    <p><strong className="mortes">{mortes}</strong></p>
+                    <p>Pessoas Recuperadas</p>
+                    <p><strong className="pessoasRecuperadas">{pessoasRecuperadas}</strong></p>
+                </div>
         ) 
     }
 }
