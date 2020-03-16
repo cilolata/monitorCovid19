@@ -1,0 +1,9 @@
+.foo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.creditos{
+    font-size: 0.8rem;
+}
