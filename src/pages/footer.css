@@ -12,7 +12,7 @@ footer{
     color: rgb(14, 14, 15)
 }
 
-@media (max-width: 856px) {
+@media (max-width: 948px) {
  
     footer {
       flex-direction: column;

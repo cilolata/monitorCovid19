@@ -45,13 +45,12 @@ li{
 
 @media (max-width: 948px) {
     .noticia{
-        display: flex;
-        flex-direction: column;
-        align-items: center;    }
+        width: 90%;
+        
+    }
   
     ul{
         margin: 4% 0;
-        width: 50%;       
     }
 
     p{
