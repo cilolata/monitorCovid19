@@ -1,12 +1,13 @@
 .info-cases{
-    background-color: rgb(212, 217, 221);
-    background-size: cover;
     height: 40%;
-    margin: 3% 5%;
+    margin: 3% 4%;
     padding: 1% 2%;
     text-align: center;
     color: rgb(66, 65, 68);
-    border-radius: 3%;
+    border-radius: 1%;
+    box-shadow: 4px 4px 5px rgb(216, 214, 214);
+    background-color: rgb(212, 217, 221);
+    background-size: cover;
     background: #BE93C5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -41,3 +42,11 @@ p{
 .pessoasRecuperadas{
     color: green;
 }
+
+@media (max-width: 948px) {
+    .info-cases{
+        margin: 0;
+      
+    }
+    
+  }

@@ -2,24 +2,28 @@
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 ul{
+    margin: 4% 6% 4% 0;
+    padding: 1%;
     list-style: none;
     text-align: justify;
     background: rgb(238, 234, 234);
-    border: 1px solid rgb(235, 232, 232);
-    margin: 4% 1%;
-    padding: 1%;
-    border-radius: 3%;
     background: #BE93C5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 1%;
+    border: 1px solid rgb(235, 232, 232);
+    box-shadow: 0 4px 5px rgb(216, 214, 214);
+
 
 }
 
 li{
     padding: 2%;
+
 }
 
 .titulo{
@@ -36,3 +40,28 @@ li{
 .url:hover{
     color: rgb(147, 118, 180);
 }
+
+
+
+@media (max-width: 948px) {
+    .noticia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    }
+  
+    ul{
+        margin: 4% 0;
+        width: 50%;       
+    }
+
+    p{
+        word-wrap: break-word;
+    }
+
+  
+
+    a{
+        word-wrap: break-word;
+    }
+    
+  }
