@@ -21,12 +21,12 @@ export default class Main extends Component {
 
         
         this.setState({ 
-            pais: response.data[31].country,
-            casos: response.data[31].cases,
-            casosHoje: response.data[31].todayCases,
-            casosCriticos: response.data[31].critical,
-            mortes: response.data[31].deaths,
-            pessoasRecuperadas: response.data[31].recovered
+            pais: response.data[29].country,
+            casos: response.data[29].cases,
+            casosHoje: response.data[29].todayCases,
+            casosCriticos: response.data[29].critical,
+            mortes: response.data[29].deaths,
+            pessoasRecuperadas: response.data[29].recovered
          });
 
         //console.log(response.data)
