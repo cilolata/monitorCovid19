@@ -1,16 +1,22 @@
 .App{
     display: flex;
     flex-direction: row;
-    background-color: rgb(231, 229, 229);
+    background-color: rgb(229, 229, 231);
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .footer{
-  
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
 
-
+@media (max-width: 856px) {
+    .App{
+        flex-direction: column; 
+    }
+    
+  }
 
 
