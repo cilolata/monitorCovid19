@@ -19,6 +19,7 @@ export default class Main extends Component {
     loadContries = async () => {
         const response = await api.get('/')
 
+        console.log(response.data)
         
         this.setState({ 
             pais: response.data[29].country,
@@ -29,7 +30,6 @@ export default class Main extends Component {
             pessoasRecuperadas: response.data[29].recovered
          });
 
-        //console.log(response.data)
     };
 
     render(){

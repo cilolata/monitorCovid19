@@ -1,14 +1,8 @@
-.noticias{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
 
 ul{
-    width: 50%;
+    width: 80%;
     padding: 1%;
-    margin: 1%; 
+    margin: 0 0 1% 0; 
     list-style: none;
     background: #BE93C5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
@@ -54,7 +48,6 @@ li{
     }
 
     ul{
-        width: 20%;
     }
 
     p{
