@@ -1,9 +1,8 @@
 
 .info-cases{
     height: 40%;
-    margin: 0 2% 0 10%;
+    margin: 0 4% 0 10%;
     padding: 2% 4%;
-    text-align: center;
     color: rgb(66, 65, 68);
     border-radius: 1%;
     box-shadow: 4px 4px 5px rgb(216, 214, 214);
@@ -12,7 +11,7 @@
     background: #BE93C5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    
 }
 
 li{
@@ -26,6 +25,7 @@ h1{
 .info-cases  p{
     font-size: 2rem;
     margin: 3%;
+    text-align: center;
 }
 
 .casos{

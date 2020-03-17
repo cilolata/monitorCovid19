@@ -24,7 +24,7 @@ export default class Noticias extends Component {
         return (
             <div className="noticias"> 
                 {this.state.noticias.map(noticias => (
-                 <ul key={noticias.publishedAt}>
+                 <ul className="ul-noticias" key={noticias.publishedAt}>
                     <li className="titulo">{noticias.title}</li>
                     <li className="descricao">{noticias.description}</li>
                     <li><a href={noticias.url} className="url" rel="noopener noreferrer" target="_blank">{noticias.url}</a></li>
