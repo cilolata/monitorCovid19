@@ -12,7 +12,6 @@ const  Main = () =>{
     
             const country = response.data.map(country => country);
             
-            console.log(response.data);
             setPais(country);
         };
         loadContries();
