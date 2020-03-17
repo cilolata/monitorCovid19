@@ -39,9 +39,9 @@ const  Main = () =>{
         return (
             <>
                 <div className= 'info-cases'>
-                    <select name="select" className="custom-select" onChange={handleSelectChange}>
-                    {pais.map(p =>
-                    <option key={p.country} name="country" value={p.country}>{p.country}</option>)}
+                <select name="select" className="custom-select" onChange={handleSelectChange}>
+                 {pais.map(p =>
+                 <option key={p.country} name="country" selected={p.country === "Brazil"} value={p.country}>{p.country}</option>)}
                 </select>
 
                 {paisAtual.map((p) => (
