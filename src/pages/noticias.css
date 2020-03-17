@@ -16,7 +16,7 @@ ul{
 
 li{
     text-align: justify;
-    padding: 2%;
+    padding: 2% 3%;
 
 
 }
@@ -45,9 +45,12 @@ li{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 3%;
+
     }
 
     ul{
+        max-width: 55%;
     }
 
     p{
