@@ -48,8 +48,8 @@ h1{
 }
 
 .info-cases .custom-select{
-    line-height: 10px;
-    font-size: 1.6em;
+    line-height: 1.2em;
+    font-size: 1.2em;
 }
 
 @media (max-width: 948px) {
