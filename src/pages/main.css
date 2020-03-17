@@ -14,12 +14,15 @@
     background: linear-gradient(to bottom, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+li{
+    list-style: none;
+}
 
 h1{
     font-size: 2.5rem;
 }
 
-.info-cases p{
+.info-cases  p{
     font-size: 2rem;
     margin: 3%;
 }
@@ -42,6 +45,11 @@ h1{
 
 .pessoasRecuperadas{
     color: green;
+}
+
+.info-cases .custom-select{
+    line-height: 10px;
+    font-size: 1.6em;
 }
 
 @media (max-width: 948px) {
