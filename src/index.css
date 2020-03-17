@@ -3,12 +3,22 @@
 *{
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
 
 }
 
-html, body{
+html, body, #root{
     font-family: 'Roboto', sans-serif;
+    color: rgb(66, 65, 68);
 
+}
+
+body{
+    background-color: rgb(229, 229, 231);
+    background-size: cover;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    
 }
 

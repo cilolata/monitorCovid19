@@ -1,16 +1,17 @@
 import React from 'react';
+import Header from './pages/Header';
+import Sidebar from './pages/Sidebar';
+import Noticias from './pages/Noticias';
+import Footer from './pages/Footer';
 import './App.css';
-import Main from './pages/main';
-import Noticias from './pages/noticias';
-import Footer from './pages/footer';
-import Header from './pages/header';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <div className="main">
-      <Main />
+      <Sidebar />
       <Noticias />
       </div>
       <Footer />

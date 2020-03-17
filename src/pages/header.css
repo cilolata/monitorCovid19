@@ -14,24 +14,33 @@
 .lista-header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     max-width: 100%;
+    padding: 0 5%;
 }
 
 .avisos{
     font-size: 0.9rem;
     font-weight: 700;
     text-align: center;
+    padding: 3%;
+
 }
+
+
+
 
 @media (max-width: 948px) {
   
     .titulo{
         text-align: center;
+        padding: 5% 0;
     }
 
     .lista-header{
         flex-direction: column;
         align-items: center;
+        padding: 2%;
     }
     
   }

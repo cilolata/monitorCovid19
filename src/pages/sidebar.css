@@ -1,27 +1,23 @@
 
 .info-cases{
     height: 40%;
-    margin: 0 4% 0 10%;
-    padding: 2% 4%;
-    color: rgb(66, 65, 68);
-    border-radius: 1%;
-    box-shadow: 4px 4px 5px rgb(216, 214, 214);
+    margin: 0 4% 0 0;
+    padding: 3% 2%;
     background-color: rgb(212, 217, 221);
     background-size: cover;
     background: #BE93C5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    border-radius: 1%;
+    box-shadow: 2px 2px 5px rgb(216, 214, 214);
+   
 }
 
-li{
-    list-style: none;
-}
+select{
+    max-width: 100%;
+    padding: 1% 2%;
 
-h1{
-    font-size: 2.5rem;
 }
-
 .info-cases  p{
     font-size: 2rem;
     margin: 3%;
@@ -55,8 +51,10 @@ h1{
 
 @media (max-width: 948px) {
     .info-cases{
-        margin: 0;
+        margin: 10% 0 5% 0;
       
     }
+
+  
     
   }

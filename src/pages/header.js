@@ -10,8 +10,8 @@ export default class Header extends Component {
                     <li className="avisos">Lave as mãos sempre</li>
                     <li className="avisos">Use álcool em gel 70</li>
                     <li className="avisos">Tussa e espirre no cotovelo</li>
-                    <li className="avisos">Mantenha pelo menos 1 metro de distância de pessoas com sintomas</li>
-                    <li className="avisos">Compre apenas o necessário no supermercado para você e sua família</li>
+                    <li className="avisos aviso-distancia">Mantenha pelo menos 1 metro de distância de pessoas com sintomas</li>
+                    <li className="avisos aviso-compras">Compre apenas o necessário no supermercado para você e sua família</li>
                     <li className="avisos">Seja solidário</li>
                 </ul>
             </div>
