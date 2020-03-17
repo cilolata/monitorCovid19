@@ -1,53 +1,68 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../services/api';
 import './main.css';
 
-export default class Main extends Component {
-    state = {
-        pais: [],
-        casos: [],
-        casosHoje: [],
-        casosCriticos: [],
-        mortes: [],
-        pessoasRecuperadas: []
+const  Main = () =>{
+    const [pais, setPais] = useState([]);
+    const [paisAtual, setPaisAtual] = useState([]);
+  
+    useEffect(() => {
+        const loadContries = async () => {
+            const response = await api.get('/');
+    
+            const country = response.data.map(country => country);
+            
+            console.log(response.data);
+            setPais(country);
+        };
+        loadContries();
+    },[]);
+    
+    useEffect(() => {
+        const loadCountry= async () => {
+            const atual = "Brazil";
+            const result = pais.filter(p => p.country === atual);
+            setPaisAtual(result);
+
+        }
+        loadCountry();
+    }, [pais]);
+   
+
+   const handleSelectChange = event => {
+        const paisSelect = event.target.value;
+
+        const result = pais.filter(p => p.country === paisSelect);
+
+        setPaisAtual(result);
     }
-
-    componentDidMount(){
-        this.loadContries();
-    }
-
-    loadContries = async () => {
-        const response = await api.get('/')
-
-        console.log(response.data)
-        
-        this.setState({ 
-            pais: response.data[29].country,
-            casos: response.data[29].cases,
-            casosHoje: response.data[29].todayCases,
-            casosCriticos: response.data[29].critical,
-            mortes: response.data[29].deaths,
-            pessoasRecuperadas: response.data[29].recovered
-         });
-
-    };
-
-    render(){
-        const {pais, casos, casosHoje, casosCriticos, mortes, pessoasRecuperadas} = this.state;
+  
         return (
+            <>
                 <div className= 'info-cases'>
-                    <h1>{pais}</h1>
-                    <p>Casos</p>
-                    <p><strong className="casos">{casos}</strong></p>
+                <select name="select" className="custom-select" onChange={handleSelectChange}>
+                 {pais.map(p =>
+                 <option key={p.country} name="country" value={p.country}>{p.country}</option>)}
+                </select>
+
+                {paisAtual.map((p) => (
+                    <li key={p.country}>
+                    <p>Todos casos</p>
+                    <p><strong className="casos">{p.cases}</strong></p>
                     <p>Casos Hoje</p>
-                    <p><strong className="casosHoje">{casosHoje}</strong></p>
+                    <p><strong className="casosHoje">{p.todayCases}</strong></p>
                     <p>Casos Críticos</p>
-                    <p><strong className="casosCriticos">{casosCriticos}</strong></p>
+                    <p><strong className="casosCriticos">{p.critical}</strong></p>
                     <p>Mortes</p>
-                    <p><strong className="mortes">{mortes}</strong></p>
-                    <p>Pessoas Recuperadas</p>
-                    <p><strong className="pessoasRecuperadas">{pessoasRecuperadas}</strong></p>
+                    <p><strong className="mortes">{p.deaths}</strong></p>
+                    <p>Pessoas Recuperadas</p>  
+                    <p><strong className="pessoasRecuperadas">{p.recovered}</strong></p> 
+                    </li>
+                    ))}
                 </div>
+                </>
         ) 
     }
-}
+
+
+export default Main;
