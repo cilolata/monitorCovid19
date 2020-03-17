@@ -14,7 +14,7 @@ export default class Noticias extends Component {
     }
 
     loadArticles = async() => {
-        const response = await axios.get('http://newsapi.org/v2/top-headlines?country=br&category=health&apiKey=e8084c8d2eb34921b1052f1b338813d4')
+        const response = await axios.get('https://newsapi.org/v2/top-headlines?country=br&category=health&apiKey=e8084c8d2eb34921b1052f1b338813d4')
         //console.log(response.data.articles)
         const noticias = response.data.articles;
         this.setState({ noticias });
