@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 3% 0;
+    color: rgb(36, 9, 90);
 }
 
 .titulo{
@@ -13,7 +14,7 @@
 .lista-header{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
 }
 
 .avisos{
@@ -21,3 +22,16 @@
     font-weight: 700;
     text-align: center;
 }
+
+@media (max-width: 948px) {
+  
+    .titulo{
+        text-align: center;
+    }
+
+    .lista-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  }

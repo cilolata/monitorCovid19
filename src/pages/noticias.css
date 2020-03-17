@@ -45,9 +45,12 @@ li{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 3%;
+
     }
 
     ul{
+        max-width: 50%;
     }
 
     p{
