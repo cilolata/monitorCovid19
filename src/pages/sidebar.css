@@ -1,67 +1,68 @@
-
-.info-cases{
-    height: 40%;
-    margin: 0 4% 0 0;
-    padding: 3% 2%;
-    background-color: rgb(212, 217, 221);
-    background-size: cover;
-    background: #BE93C5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 1%;
-    box-shadow: 2px 2px 5px rgb(216, 214, 214);
-   
+.info-cases {
+  height: 40%;
+  margin: 0 4% 0 0;
+  padding: 3% 2%;
+  background-color: rgb(212, 217, 221);
+  background-size: cover;
+  background: #be93c5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #7bc6cc,
+    #be93c5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #7bc6cc,
+    #be93c5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 1%;
+  box-shadow: 2px 2px 5px rgb(216, 214, 214);
 }
 
-select{
-    max-width: 100%;
-    padding: 1% 2%;
-    margin: 3% 0 10% 0.5%;
-
+select {
+  max-width: 100%;
+  padding: 1% 2%;
+  margin: 3% 0 10% 0.5%;
 }
-.info-cases  p{
-    font-size: 2rem;
-    margin: 3%;
-    text-align: center;
-}
-
-.casos{
-    color: coral;
+.info-cases p {
+  font-size: 2rem;
+  margin: 3%;
+  text-align: center;
 }
 
-.casosHoje{
-    color: rgb(230, 36, 133);
+.casos {
+  color: coral;
 }
 
-.casosCriticos{
-    color: red;
+.casosHoje {
+  color: rgb(230, 36, 133);
 }
 
-.mortes{
-    color: rgb(58, 54, 54);
+.casosCriticos {
+  color: red;
 }
 
-.pessoasRecuperadas{
-    color: green;
+.mortes {
+  color: rgb(58, 54, 54);
 }
 
-.info-cases .custom-select{
-    line-height: 1.2em;
-    font-size: 1.2em;
+.pessoasRecuperadas {
+  color: green;
+}
+
+.info-cases .custom-select {
+  line-height: 1.2em;
+  font-size: 1.2em;
+  margin: 0 auto;
 }
 
 @media (max-width: 948px) {
-    .info-cases{
-        margin: 10% 0 5% 0;
-      
-    }
-
-    select{
-        display: flex;
-        padding: 2% 20% 2% 5%; 
-
-    }
-
-  
-    
+  .info-cases {
+    margin: 10% 0 5% 0;
   }
+
+  select {
+    display: flex;
+    padding: 2% 20% 2% 5%;
+  }
+}
