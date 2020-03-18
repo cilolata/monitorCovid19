@@ -8,12 +8,16 @@ const Sidebar = () => {
 
   useEffect(() => {
     const loadContries = async () => {
-      const response = await api.get("/");
+      const response = await api.get("/locations");
+      console.log(response.data)
 
-      const country = response.data.map(country => country);
+      const country = response.data.locations.map(country => country);
+
+      
 
       setPais(country);
       country.sort((a, b) => {
+  
         return a.country > b.country ? 1 : -1;
       });
     };
@@ -58,25 +62,21 @@ const Sidebar = () => {
         <ul className="ul-paises">
           {paisAtual.map(p => (
             <li key={p.country}>
+              <p>Região</p>
+              <p>
+                <strong className="casosHoje">{p.province}</strong>
+              </p>
               <p>Todos casos</p>
               <p>
-                <strong className="casos">{p.cases}</strong>
-              </p>
-              <p>Casos Hoje</p>
-              <p>
-                <strong className="casosHoje">{p.todayCases}</strong>
-              </p>
-              <p>Casos Críticos</p>
-              <p>
-                <strong className="casosCriticos">{p.critical}</strong>
+                <strong className="casos">{p.latest.confirmed}</strong>
               </p>
               <p>Mortes</p>
               <p>
-                <strong className="mortes">{p.deaths}</strong>
+                <strong className="mortes">{p.latest.deaths}</strong>
               </p>
               <p>Pessoas Recuperadas</p>
               <p>
-                <strong className="pessoasRecuperadas">{p.recovered}</strong>
+                <strong className="pessoasRecuperadas">{p.latest.recovered}</strong>
               </p>
             </li>
           ))}
