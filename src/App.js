@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet'
 import Header from './pages/header';
-import Sidebar from './pages/sidebar';
+import Sidebar from './pages/Sidebar';
 import Noticias from './pages/noticias';
 import Footer from './pages/footer';
 import './App.css';
