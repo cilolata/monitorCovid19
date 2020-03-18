@@ -1,7 +1,7 @@
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     background: #59C173;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -13,10 +13,8 @@ footer{
     padding: 3% 0;
 }
 
-.apiCorona{
-    margin-left: 4%;
-}
 
-.coders{
-    margin-left: 4%;
+
+a{
+    margin: 0 5px;
 }
