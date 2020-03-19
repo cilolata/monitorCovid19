@@ -29,6 +29,7 @@ export default class Noticias extends Component {
                     <li><a href={noticia.url} className="url" rel="noopener noreferrer" target="_blank">{noticia.url}</a></li>
                 </ul>
                  
+                 
                 ))}
                 
             </div>
