@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     const loadContries = async () => {
-      const response = await api.get("/");
+      const response = await api.get("/locations");
 
       const country = response.data.locations.map(country => country);
       console.log(response.data)
