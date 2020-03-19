@@ -9,11 +9,8 @@ const Sidebar = () => {
   useEffect(() => {
     const loadContries = async () => {
       const response = await api.get("/locations");
-      console.log(response.data)
 
       const country = response.data.locations.map(country => country);
-
-      
 
       setPais(country);
       country.sort((a, b) => {
@@ -35,8 +32,9 @@ const Sidebar = () => {
 
   const handleSelectChange = event => {
     const paisSelect = event.target.value;
+    const id = parseInt(paisSelect);
 
-    const result = pais.filter(p => p.country === paisSelect);
+    const result = pais.filter(p => p.id === id);
 
     setPaisAtual(result);
   };
@@ -53,7 +51,8 @@ const Sidebar = () => {
             Brazil
           </option>
           {pais.map(p  => (
-            <option key={p.id} name="country" value={p.country}>
+            <option key={p.id} name="country" 
+            value={p.id}>
               {p.province ? `${p.country} ${p.province}`: p.country }
             </option>
           ))}
@@ -62,9 +61,9 @@ const Sidebar = () => {
         <ul className="ul-paises">
           {paisAtual.map(p => (
             <li key={p.id}>
-              <p>Região</p>
+              <p>Região</p> 
               <p>
-                <strong className="casosHoje">{p.province}</strong>
+                <strong className="casosHoje">{p.province ? `${p.country} ${p.province}`: p.country }</strong>
               </p>
               <p>Todos casos</p>
               <p>
