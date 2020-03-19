@@ -8,9 +8,10 @@ const Sidebar = () => {
 
   useEffect(() => {
     const loadContries = async () => {
-      const response = await api.get("/locations");
+      const response = await api.get("/");
 
       const country = response.data.locations.map(country => country);
+      console.log(response.data)
 
       setPais(country);
       country.sort((a, b) => {
