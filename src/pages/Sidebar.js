@@ -52,16 +52,16 @@ const Sidebar = () => {
           <option value="Brazil" hidden>
             Brazil
           </option>
-          {pais.map(p => (
-            <option key={p.country} name="country" value={p.country}>
-              {p.country}
+          {pais.map(p  => (
+            <option key={p.id} name="country" value={p.country}>
+              {p.province ? `${p.country} ${p.province}`: p.country }
             </option>
           ))}
         </select>
 
         <ul className="ul-paises">
           {paisAtual.map(p => (
-            <li key={p.country}>
+            <li key={p.id}>
               <p>Região</p>
               <p>
                 <strong className="casosHoje">{p.province}</strong>
