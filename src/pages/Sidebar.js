@@ -52,8 +52,8 @@ const Sidebar = () => {
             Brazil
           </option>
           {pais.map(p  => (
-            <option key={p.id} name="country" 
-            value={p.id}>
+            <option key={p.country} name="country" 
+            value={p.country}>
                {p.country}
             </option>
           ))}
@@ -61,7 +61,7 @@ const Sidebar = () => {
 
         <ul className="ul-paises">
           {paisAtual.map(p => (
-            <li key={p.country}>
+            <li key={p.id}>
                <p>Casos</p>
               <p>
                 <strong className="casos">{p.cases}</strong>
