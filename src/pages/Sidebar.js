@@ -11,7 +11,6 @@ const Sidebar = () => {
       const response = await api.get("/");
 
       const country = response.data.map(country => country);
-      console.log(response.data)
 
       setPais(country);
       country.sort((a, b) => {
@@ -33,9 +32,9 @@ const Sidebar = () => {
 
   const handleSelectChange = event => {
     const paisSelect = event.target.value;
-    const id = parseInt(paisSelect);
+   
 
-    const result = pais.filter(p => p.id === id);
+    const result = pais.filter(p => p.country === paisSelect);
 
     setPaisAtual(result);
   };
@@ -51,17 +50,17 @@ const Sidebar = () => {
           <option value="Brazil" hidden>
             Brazil
           </option>
-          {pais.map(p  => (
-            <option key={p.id} name="country" 
-            value={p.id}>
+          {pais.map((p, index)  => (
+            <option key={index} name="country" 
+            value={p.country}>
                {p.country}
             </option>
           ))}
         </select>
 
         <ul className="ul-paises">
-          {paisAtual.map(p => (
-            <li key={p.country}>
+          {paisAtual.map((p, index) => (
+            <li key={index}>
                <p>Casos</p>
               <p>
                 <strong className="casos">{p.cases}</strong>
