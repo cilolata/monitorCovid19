@@ -7,14 +7,19 @@
   }
 }
 
+.noticias{
+  width: 60%;
+}
+
 ul.ul-noticias {
-  padding: 4%;
-  margin: 0 0 2% 0;
+  padding: 2%;
+  margin: 0 0 1% 0;
   animation: enterRight 1s 1 0s ease;
 }
 
 li {
   text-align: justify;
+  padding: 2%;
 }
 
 .url {
@@ -36,9 +41,15 @@ li {
 }
 
 @media (max-width: 948px) {
-  ul.ul-noticias {
-    margin: 5% 23%;
+  .noticias{
+    width: 100%;
+
   }
+
+  ul.ul-noticias{
+    margin: 3% 0;
+  }
+
 
   p {
     word-wrap: break-word;
