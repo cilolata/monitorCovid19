@@ -1,4 +1,7 @@
 .info-cases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 30%;
   height: 40%;
   margin: 0 4% 0 0;
@@ -25,6 +28,9 @@ select {
   padding: 1% 2%;
   margin: 3% 0 10% 0.5%;
 }
+
+
+
 .info-cases p {
   font-size: 2rem;
   margin: 3%;
@@ -54,7 +60,7 @@ select {
 .info-cases .custom-select {
   line-height: 1.2em;
   font-size: 1.2em;
-  margin: 0 auto;
+ 
 }
 
 @media (max-width: 948px) {
